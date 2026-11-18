@@ -63,7 +63,7 @@ importers:
         version: 3.0.3
       ai:
         specifier: ^3.3.39
-        version: 3.3.39(openai@4.61.1(encoding@0.1.13)(zod@3.23.8))(react@18.3.1)(sswr@2.1.0(svelte@5.56.8))(svelte@5.56.8)(vue@3.5.6(typescript@5.6.2))(zod@3.23.8)
+        version: 3.3.39(openai@4.61.1(encoding@0.1.13)(zod@3.23.8))(react@18.3.1)(sswr@2.2.0(svelte@5.56.8))(svelte@5.56.8)(vue@3.5.6(typescript@5.6.2))(zod@3.23.8)
       base64-arraybuffer:
         specifier: ^1.0.2
         version: 1.0.2
@@ -104,8 +104,8 @@ importers:
         specifier: ^0.14.1
         version: 0.14.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       sswr:
-        specifier: ^2.1.0
-        version: 2.1.0(svelte@5.56.8)
+        specifier: ^2.2.0
+        version: 2.2.0(svelte@5.56.8)
       svelte:
         specifier: ^5.55.7
         version: 5.56.8
@@ -3734,6 +3734,11 @@ packages:
     peerDependencies:
       svelte: ^5.55.7
 
+  sswr@2.2.0:
+    resolution: {integrity: sha512-clTszLPZkmycALTHD1mXGU+mOtA/MIoLgS1KGTTzFNVm9rytQVykgRaP+z1zl572cz0bTqj4rFVoC2N+IGK4Sg==}
+    peerDependencies:
+      svelte: ^5.55.7
+
   stack-utils@2.0.6:
     resolution: {integrity: sha512-XlkWvfIm6RmsWtNJx+uqtKLS8eqFbxUg0ZzLXqY0caEy9l7hruX8IpiDnjsLavoBgqCCR71TqWO8MaXYheJ3RQ==}
     engines: {node: '>=10'}
@@ -5534,7 +5539,7 @@ snapshots:
     dependencies:
       humanize-ms: 1.2.1
 
-  ai@3.3.39(openai@4.61.1(encoding@0.1.13)(zod@3.23.8))(react@18.3.1)(sswr@2.1.0(svelte@5.56.8))(svelte@5.56.8)(vue@3.5.6(typescript@5.6.2))(zod@3.23.8):
+  ai@3.3.39(openai@4.61.1(encoding@0.1.13)(zod@3.23.8))(react@18.3.1)(sswr@2.2.0(svelte@5.56.8))(svelte@5.56.8)(vue@3.5.6(typescript@5.6.2))(zod@3.23.8):
     dependencies:
       '@ai-sdk/provider': 0.0.23
       '@ai-sdk/provider-utils': 1.0.19(zod@3.23.8)
@@ -5553,7 +5558,7 @@ snapshots:
     optionalDependencies:
       openai: 4.61.1(encoding@0.1.13)(zod@3.23.8)
       react: 18.3.1
-      sswr: 2.1.0(svelte@5.56.8)
+      sswr: 2.2.0(svelte@5.56.8)
       svelte: 5.56.8
       zod: 3.23.8
     transitivePeerDependencies:
@@ -8618,6 +8623,11 @@ snapshots:
   sprintf-js@1.0.3: {}
 
   sswr@2.1.0(svelte@5.56.8):
+    dependencies:
+      svelte: 5.56.8
+      swrev: 4.0.0
+
+  sswr@2.2.0(svelte@5.56.8):
     dependencies:
       svelte: 5.56.8
       swrev: 4.0.0
